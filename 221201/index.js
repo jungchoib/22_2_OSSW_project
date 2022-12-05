@@ -13,7 +13,7 @@ const client = (module.exports = new Client({intents:[131071]}));
 const date = new Date();
 // key: MTA0MjMwODY0MzcyODY2NjY4NA.GIx1vq.Sg4OVx3nqotnjoXnFA08eFqJdwN-ox81xgwZ7s
 // 봇과 서버를 연결해주는 부분
-client.login('key');
+client.login('MTA0MjMwODY0MzcyODY2NjY4NA.GWLIvT.baib7LUwfLJmYteBJIHVSbL5s1UmH_kiR3FURQ');
 
 // discord 봇이 실행될 때 딱 한 번 실행할 코드를 적는 부분
 client.once('ready', () => {
@@ -52,7 +52,7 @@ var crawledMusic = []
       });
       for (var i = 0; i < 50; i++){
         // console.log("<<" + (i+1) + "위>>\n" + "제목 : " + crawledMusic[i].title + "\n가수 : " + crawledMusic[i].artist + "\n")
-		melon = melon + ("<<" + (i+1) + "위>>\n" + "제목 : " + crawledMusic[i].title + "\n가수 : " + crawledMusic[i].artist + "\n");
+		melon = melon + (`${i+1}위\n제목 : ${crawledMusic[i].title}\n가수 : ${crawledMusic[i].artist}\n\n`);
 	  }
     } else {
       console.log("server response error")
